@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Jorge Arcuri</title>
+    <link rel="icon" type="image/x-icon" href="favicon (1).ico">
+    <link rel="stylesheet" href="cvdefinitivo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"> <!--ver si es necesario esto, o luego lo saco-->
+</head>
+<body class="body">
+    <header>
+        <nav class="nav">
+            <div>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre_mi">Sobre mi</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#formulario">Formulario</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="inicio" id="inicio"> <!--class="inicio" sacarlo si no lo voy a usar en css-->
+            <h1>Jorge Arcuri</h1>
+            <h2>Desarrollador Web</h2>
+            <img class="perfil" src="avatarperfil.jpg" alt="Jorge Arcuri">
+        </section>  <!--quiza al id ponerle hero en vez de inicio-->
+        <section id="sobre_mi">
+            <h3>Sobre mi</h3>
+            <p>Soy Jorge Arcuri, desarrollador web.<br> 
+            Este es mi portfolio en donde podras ver las paginas web que he desarrollado.<br> 
+            Me enfoco en seguir mejorando y brindar una excelente experiencia al cliente. </p>
+        </section>
+        <section class="tecnologias" id="tecnologias">    
+            <h4 class="h4">Tecnologias</h4>
+                <p>HTML CSS JavaScript</p>
+                <img class="lenguajes" src="htmlcssjs.png" alt="HTML CSS JavaScript">
+            <h5>Proyectos</h5>
+                <p>Github</p>
+                <img class="github" src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="Github">
+        </section>
+        <section id="formulario">
+            <h6>Contactame</h6>
+            <form class="form" action="" method="post">
+                <label>Nombre</label>
+                <input tipe="text" name="nombre" placeholder="Ingrese su nombre" required/>
+                <label>Apellido</label>
+                <input type="text" name="apellido" placeholder="Ingrese su apellido" required/>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Ingrese su correo" required/>
+                <label class="mensaje">Mensaje</label>
+                <textarea placeholder="Envie su consulta por aqui" required></textarea>
+                <input class="enviar" id="enviar" type="submit" value="Enviar"/>
+                <script src="cvjs.js"></script>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <i class="fa-brands fa-github"></i>
+        <p class="reservados">Todos los derechos reservados</p>
+   </footer>
+</body>
+</html>
